@@ -151,25 +151,7 @@ Navigation success rate will be evaluated across 5 noise levels:
 | High | 0.5 | 20 | TBD |
 | Extreme | 0.8 | 20 | TBD |
 
----
 
-## Motivation
-
-This project targets the **perception and controls** engineering skill set required for robotics positions in:
-- Field robotics and outdoor autonomy
-- Legged locomotion systems
-- Search and rescue robotics
-- Warehouse and logistics automation
-
-Uncertain environments are the core unsolved challenge in robot deployment — VisNav provides a quantifiable framework for studying navigation robustness.
-
----
-
-## Author
-
-**Priyanka Lakariya**
-MS Robotics (ECE Concentration) — Northeastern University
-[GitHub](https://github.com/priyankalakariya) | [LinkedIn](#)
 
 ---
 
