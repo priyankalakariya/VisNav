@@ -4,6 +4,7 @@ Autonomous Visual Navigation in Uncertain Dynamic Environments
 ![ROS2](https://img.shields.io/badge/ROS2-Humble-blue)
 ![MuJoCo](https://img.shields.io/badge/MuJoCo-3.5.0-green)
 ![Python](https://img.shields.io/badge/Python-3.10-blue)
+![VisNav Simulation Demo](media/demo.gif)
 
 > A differential drive robot navigates to a camera-detected goal in a MuJoCo physics simulation using the ROS2 Nav2 navigation stack — tested under sensor noise and dynamic obstacles.
 
