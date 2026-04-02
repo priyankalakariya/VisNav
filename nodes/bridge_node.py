@@ -8,6 +8,7 @@ import mujoco
 import numpy as np
 import math
 
+
 class BridgeNode(Node):
     def __init__(self):
         super().__init__('bridge_node')
@@ -78,6 +79,7 @@ class BridgeNode(Node):
         msg.data     = pixels.flatten().tobytes()
 
         self.cam_pub.publish(msg)
+
     def publish_odom(self):
         x     = self.data.qpos[0]
         y     = self.data.qpos[1]
@@ -120,15 +122,17 @@ class BridgeNode(Node):
         msg.range_min       = 0.1
         msg.range_max       = 5.0
         msg.ranges          = [distance]
+
         self.scan_pub.publish(msg)
 
 
-    def main(args=None):
-       rclpy.init(args=args)
-       node = BridgeNode()
-       rclpy.spin(node)
-       node.destroy_node()
-       rclpy.shutdown()
+def main(args=None):
+    rclpy.init(args=args)
+    node = BridgeNode()
+    rclpy.spin(node)
+    node.destroy_node()
+    rclpy.shutdown()
 
-    if __name__ == '__main__':
-       main()
+
+if __name__ == '__main__':
+    main()
